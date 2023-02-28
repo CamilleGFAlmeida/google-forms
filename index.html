@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+</head>
+<body class="h-screen grid items-center justify-center"> <!-- TailWind -->
+    
+    <!-- Classes com Tailwind 
+        - letter-spacing = tracking-tight
+        - margin-top: 8px = mt-8 
+        - hscreen = tela inteira 
+        - px      = padding no eixo horizontal  (X)
+        - py      = padding no eixo vertical    (Y)
+        - focus   = quando o item estiver clicado 
+        - sr-only (screen-reader only) = invisível na tela
+        - ml-3    = margin-left 
+        - focus: ring-2  = grossura do entorno do botão 
+        - focus: ring-offset-2 = separação da cor no botão 
+        - max-w-7xl (max-width extralarge) = largura 
+        - mx-auto (max-width horizontal automático) 
+        - sm        = breakpoint de tela 
+        - inline/block = modelo linha/modelo caixa 
+    -->
+
+
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="
+        inline
+        text-3xl 
+        font-extrabold
+        tracking-tight 
+        text-gray-900
+        sm:text-4xl 
+        sm:block
+        ">Faça parte da minha</h1>
+        
+        <h2 class="
+        inline
+        text-3xl 
+        font-extrabold
+        tracking-tight 
+        text-pink-500
+        sm:text-4xl 
+        sm:block
+        "
+        >lista de amigos</h2>
+        
+        <form action="" class="mt-8 flex">
+            <label for="insta-friend" class="sr-only">Digite seu arroba</label>
+            <input class="
+            border border-gray-300 rounded-md 
+            px-5
+            py-3
+            focus:outline-none
+            focus:ring-pink-500
+            focus:border-pink-500
+         "
+            id="insta-friend"
+            type="text" 
+            placeholder="Digite o seu @">
+            <button 
+                class="bg-pink-500 px-5 py-3 text-white rounded-md flex items-center justify-center ml-3
+                hover: bg-pink-600
+                focus:outline-none
+                focus:ring-2 focus:ring-offset-2 focus:ring-pink-500
+                "
+                
+                >Solicitar</button>
+        </form>
+    </div>
+</body>
+</html>
